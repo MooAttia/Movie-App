@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <title>Movie App</title>
+  <link rel="shortcut icon" href="images/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+
+<body>
+
+
+
+
+  
+<div class="loading position-fixed top-0 bottom-0 start-0 end-0 bg-black  justify-content-center align-items-center">
+  <div class="spinner">
+    <span class="loader"></span>
+  </div>
+</div>
+<div class="side-nav bg-black h-100 position-fixed d-flex">
+  <div class="nav-tab p-3 d-flex flex-column justify-content-between h-100 text-white">
+    <div class="links">
+      <ul class="list-unstyled categoriesList">
+        <li class="py-3 position-relative nowPlaying  w-50">Now playing</li>
+        <li class="py-3 position-relative popular w-50">Popular</li>
+        <li class="py-3 position-relative topRated  w-50">Top Rated</li>
+        <li class="py-3 position-relative trending  w-50">Trending</li>
+        <li class="py-3 position-relative Upcoming  w-50">Upcoming</li>
+        <li class="py-3 position-relative contact  w-50 ">Contact Us</li>
+      </ul>
+    </div>
+    <div class="copyrights">
+      <div class="icons mb-4">
+        <i class="fa-brands fa-facebook-f pe-2"></i>
+        <i class="fa-brands fa-twitter px-2"></i>
+        <i class="fa-solid fa-globe px-2"></i>
+      </div>
+      <div class="author">
+        <p>Copyright © 2024 All Rights <br> Reserved.</p>
+        <p>Created by <a href="" class="authorName text-decoration-none px-2">Mohamed Attia</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-face d-flex flex-column justify-content-between align-items-center py-4 text-center bg-white text-black">
+    <img class="w-50 logoImg" src="images/logo.png" alt="logo">
+    <i class="fa-solid fa-align-justify fa-xl listIcon"></i>
+    <div>
+      <i class="fa-solid fa-globe d-block py-3"></i>
+      <i class="fa-solid fa-share-nodes py-3"></i>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container pt-1">
+    <div class="searchCont pt-5 d-flex justify-content-center ">
+      <input type="text" class="search form-control w-50 rounded-5 py-2 text-white" id="exampleFormControlInput1" placeholder="Search">
+    </div>
+  </div>
+</div>
+
+<div class="section mainSection" id="Now Playing" >
+    
+  <div class="container mt-5">
+    <div class="row g-5 mb-4" id="rowData">
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+  <div class="footer mt-5" id="contactUs">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <h2 class="text-white">Contact Us</h2>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6 col-12">
+          <input type="text" placeholder="Enter Your Name" class="nameInput w-100 py-2 text-white" id="in">
+        </div>
+        <div class="col-md-6 col-12">
+          <input type="email" placeholder="Enter Your Email" class="emailInput w-100 py-2 text-white" id="in">
+          <p class="text-danger emailAlert">Invalid Email, try example@domian.com</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6 col-12">
+          <input oninput="this.value = this.value.replace(/\D+/g, '')" placeholder="Enter Your Phone" inputmode="numeric" class="phoneInput text-white w-100 py-2 noscroll" id="in">
+          <p class="text-danger phoneAlert">Invalid phone number</p>
+        </div>
+        <div class="col-md-6 col-12">
+          <input oninput="this.value = this.value.replace(/\D+/g, '')" placeholder="Enter Your Age" inputmode="numeric" class="ageInput text-white w-100 py-2" id="in">
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6 col-12">
+          <input type="password" placeholder="Enter Your Password" class="passwordInput w-100 py-2 text-white" id="in">
+          <p class="text-danger passAlert">Password must contain numbers, uppercase letters and special character at least 8 charcaters</p>
+        </div>
+        <div class="col-md-6 col-12">
+          <input type="password" placeholder="Renter Your Password" class="rePasswordInput w-100 py-2 text-white" id="in">
+          <p class="text-danger repassAlert">Password doesnot match </p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-1">
+          <button class="btn btn-primary w-100 submitBtn">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="scrollUp ">
+      <i class="scrollBtn fa-solid fa-arrow-up fa-"></i>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
