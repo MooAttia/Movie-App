@@ -1,3 +1,4 @@
+'use strict'
 let nameInput = document.querySelector('.nameInput')
 let ageInput = document.querySelector('.ageInput')
 let emailInput = document.querySelector('.emailInput')
